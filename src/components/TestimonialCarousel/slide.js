@@ -14,7 +14,7 @@ function Slide({ clientDetail, testiCS }) {
                 <div className='client-testi-desc'>
                     {clientDetail.clientDesc}
                 </div>
-                <Link className="enquire-btn btn" to="/contact">
+                <Link className="enquire-btn btn" to="/casestudies">
                     {testiCS}
                 </Link>
             </div>

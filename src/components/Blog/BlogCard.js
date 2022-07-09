@@ -4,7 +4,7 @@ import './style.css'
 function BlogCard({ cardDetail }) {
     return (
         <div className='blog-card'>
-            <Link className="blog-image" to="/contact">
+            <Link className="blog-image" to="/blogs">
                 <img src={cardDetail.image} art='Blog-image' alt='' />
             </Link>
             <div className='card-date-details'>

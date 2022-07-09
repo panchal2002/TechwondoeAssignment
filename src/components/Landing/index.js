@@ -16,7 +16,7 @@ function Landing({ landingContent }) {
                     </div>
                     <div className='buttons landing-buttons'>
                         <div className='btn-container'>
-                            <Link className="enquire-btn btn" to="/contact">
+                            <Link className="enquire-btn btn" to="/contactus">
                                 {landingContent.landingEnquire}
                             </Link>
                             <div className='horizontal-divider'></div>

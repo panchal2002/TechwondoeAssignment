@@ -24,7 +24,7 @@ function Services({ homeServCont }) {
                                 <li className='l1'>{homeServCont.servicesList4} </li>
                                 <li className='l1'>{homeServCont.servicesList5}</li>
                             </ul>
-                            <Link className="button button-line margin-20px w-button" to="/about">
+                            <Link className="button button-line margin-20px w-button" to="/aboutus">
                                 {homeServCont.servicesLearnMore}
                             </Link>
                         </div>
