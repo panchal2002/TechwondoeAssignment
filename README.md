@@ -12,6 +12,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 4. Readme file on how to deploy and run the service.
 
+## How to run the service
+
+1. Download the project from github
+2. Open the project in the IDE of your choice (ex VS Code)
+3. Run the command `npm install` to install all the required dependencies
+4. Run the command `npm start` to run the project in local environment
+
 ## Available Scripts
 
 In the project directory, you can run:
