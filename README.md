@@ -4,13 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Non Functional Requirements
 
-### Each section of the homepage is a separate react component
+1. Each section of the homepage is a separate react component
 
-### No hardcoding of text in react app. All the content (text and images) is coming from a Headless CMS Contentful through its API.
+2. No hardcoding of text in react app. All the content (text and images) is coming from a Headless CMS Contentful through its API.
 
-### Prettier and Linter configuration
+3. Prettier and Linter configuration
 
-### Readme file on how to deploy and run the service.
+4. Readme file on how to deploy and run the service.
 
 ## Available Scripts
 
