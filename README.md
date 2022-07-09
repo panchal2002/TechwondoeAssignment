@@ -1,16 +1,23 @@
-# Getting Started with Create React App
+# Techwondoe Project (Live :- https://techwondoeassignment.netlify.app)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Non Functional Requirements
 
-# Each section of the homepage is a separate react component
+1. Each section of the homepage is a separate react component
 
-# No hardcoding of text in react app. All the content (text and images) is coming from a Headless CMS Contentful through its API.
+2. No hardcoding of text in react app. All the content (text and images) is coming from a Headless CMS Contentful through its API.
 
-# Prettier and Linter configuration
+3. Prettier and Linter configuration
 
-# Readme file on how to deploy and run the service.
+4. Readme file on how to deploy and run the service.
+
+## How to run the service
+
+1. Download the project from github
+2. Open the project in the IDE of your choice (ex VS Code)
+3. Run the command `npm install` to install all the required dependencies
+4. Run the command `npm start` to run the project in local environment
 
 ## Available Scripts
 
