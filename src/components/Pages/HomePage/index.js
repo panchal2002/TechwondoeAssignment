@@ -21,7 +21,7 @@ function Home({ homeContent }) {
             <Testimonials testiCont={homeContent[5].fields} />
             <ContactUs contactCont={homeContent[4].fields} />
             <Blog blogCont={homeContent[3].fields} />
-            <Footer footerCont={homeContent[0].fields} />
+            <Footer footerCont={homeContent[1].fields} />
             <Top />
         </div>
     );

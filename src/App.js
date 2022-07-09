@@ -22,22 +22,22 @@ class App extends React.Component {
       .then((response) => {
         // console.log(response)
         this.setState({ AllContent: response.items })
-        // console.log(this.state.AllContent)
+        console.log(this.state.AllContent)
       }).catch(console.error)
   }
   render() {
     if (!this.state.AllContent.length) return null;
     return (
       <div className="App">
-        <Enquire enquireSide={this.state.AllContent[1].fields} />
-        <Linkedin linkedinSide={this.state.AllContent[1].fields} />
+        <Enquire enquireSide={this.state.AllContent[0].fields} />
+        <Linkedin linkedinSide={this.state.AllContent[0].fields} />
         <Switch>
           <Route exact path="/" ><Home homeContent={this.state.AllContent} /></Route>
           <Route exact path="/home"><Home homeContent={this.state.AllContent} /></Route>
-          <Route path="/aboutus" ><AboutUs /></Route>
-          <Route path="/contactus"><ContactUs /></Route>
-          <Route path="/blogs"><BlogPage /></Route>
-          <Route path="/casestudies"><CaseStudies /></Route>
+          <Route path="/aboutus" ><AboutUs aboutContent={this.state.AllContent} /></Route>
+          <Route path="/contactus"><ContactUs contactContent={this.state.AllContent} /></Route>
+          <Route path="/blogs"><BlogPage blogPageContent={this.state.AllContent} /></Route>
+          <Route path="/casestudies"><CaseStudies caseStudiesContent={this.state.AllContent} /></Route>
         </Switch>
       </div>
     );

@@ -16,7 +16,7 @@ function Footer({ footerCont }) {
                         <Link className="text-link social-link" to="/casestudies">
                             {footerCont.caseStudies}
                         </Link>
-                        <Link className="text-link social-link" to="/blog">
+                        <Link className="text-link social-link" to="/blogs">
                             {footerCont.blog}
                         </Link>
                         <Link className="text-link social-link" to="/contactus">

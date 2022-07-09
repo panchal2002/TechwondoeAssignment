@@ -4,7 +4,7 @@ import './style.css'
 function Enquire({ enquireSide }) {
     return (
         <div className='enquire'>
-            <Link className="text-link" to="/contact">
+            <Link className="text-link" to="/contactus">
                 {enquireSide.enquire}
             </Link>
         </div>

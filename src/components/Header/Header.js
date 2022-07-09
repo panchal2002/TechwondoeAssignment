@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import './style.css'
 function Header({ headerCont }) {
+    // console.log(headerCont)
     const [toggle, setToggle] = new useState(true);
     return (
         <div className='headerContainer'>
