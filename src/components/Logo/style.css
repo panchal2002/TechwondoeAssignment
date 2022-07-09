@@ -1,0 +1,17 @@
+.logo{
+    align-items: center;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    font-size: 22px;
+    line-height: 21px;
+    font-weight: 700;
+    width: 13rem;
+}
+
+@media (max-width: 766px) { 
+    .logo{
+        width: 11rem;
+    }
+}

@@ -1,0 +1,104 @@
+.contact-us-container{
+    max-width: 1600px;
+    margin: auto;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+    margin-top: 10%;
+}
+.contact-us-title{
+    margin-top: 5%;
+}
+.contact-us-container h4{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.text-field{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border: 0.5px solid #f7f7f7;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: proxima-nova,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 10px;
+}
+.form label{
+    text-transform: uppercase;
+}
+.form textarea{
+    height: 100px;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+.form-section{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-column-gap: 50px;
+}
+.field-label-form{
+    text-transform: uppercase;
+}
+
+.form-services input{
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+}
+.form-services span{
+    margin-left: 20px;
+}
+
+.form-services button{
+    background: linear-gradient(45deg, #F9D423, #FF4E50);
+    border: 1px solid transparent;
+    transition: 0ms all !important;
+    color: #111111;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) { 
+    .form-container{
+        display: block;
+    }
+    .contact-us-heading{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .form-section{
+        display: block;
+    }
+    .form-services button{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 477px) { 
+    .contact-us-title h4{
+        text-align: center;
+    }
+}

@@ -1,0 +1,76 @@
+.why-us{
+    position: relative;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 0;
+    background-color: transparent;
+}
+.why-us h4{
+    text-align: left;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.why-us .list{
+    margin-top: 0;
+}
+.why-us .list li{
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    color: #f7f7f7;
+    line-height: 30px;
+    list-style-type: none;
+    white-space: normal;
+}
+.why-us .list li:before{
+    font-size: 18px;
+    content: "↗";
+    left: 0px;
+    position: absolute;
+    top: -1px;
+    font-family: "NeueMachina";
+    padding-right: 20px;
+    background: linear-gradient(45deg, #F9D423, #FF4E50);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text
+}
+.grid-why-us{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    padding: 0 4px;
+    column-gap: 30px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    row-gap: 40px;
+}
+.grid-why-us h3{
+margin-bottom: 15px;
+}
+
+@media (max-width: 1400px) { 
+    .grid-why-us h3{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 497px) { 
+    .grid-why-us{
+        grid-template-columns: 1fr;
+    }
+    .grid-why-us h3{
+        text-align: center;
+    }
+    .why-us h4{
+        text-align: center;
+    }
+    .why-us{
+        margin-top: 25%;
+    }
+}

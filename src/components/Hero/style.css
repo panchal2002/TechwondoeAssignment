@@ -1,0 +1,37 @@
+.enquire{
+    z-index: 100;
+    left: 2%;
+    transform-origin: bottom left;
+    top: auto;
+    bottom: calc(50vh);
+    transform: rotate(90deg) translateX(-50%);
+    position: fixed;
+    z-index: 997;
+}
+.linkedin{
+    z-index: 100;
+    right: 2%;
+    transform-origin: bottom right;
+    top: auto;
+    bottom: calc(50vh);
+    transform: rotate(-90deg) translateX(50%);
+    position: fixed;
+    z-index: 997;
+}
+.text-link{
+    color: #f7f7f7;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: .5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: proxima-nova,sans-serif;
+}
+
+@media (max-width: 766px) { 
+    .enquire, .linkedin{
+        display: none;
+    }
+}

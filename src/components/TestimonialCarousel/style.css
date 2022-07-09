@@ -1,0 +1,157 @@
+.slider-box {
+    width     : 100%;
+    position  : relative;
+    overflow-x  : hidden;
+}
+#slider{
+    transition: 0.7s;
+    display: inline-flex;
+    width: 300%;
+}
+#slides {
+    width     : 100%;
+    display   : grid;
+    grid-template-columns: 0.6fr 1.7fr;
+}
+
+#slides img {
+    width: 100%;
+}
+.client-pic-section{
+    width: fit-content;
+}
+
+.indicators {
+    width: fit-content;
+    position: absolute;
+    left: 45px;
+    top: 10rem;
+}
+
+.indicators button {
+    display      : inline-block;
+    width        : 15px;
+    height       : 15px;
+    border-radius: 50%;
+    background   : rgba(255, 255, 255, 0.5);
+    cursor       : pointer;
+}
+
+.active {
+    background: #ffff !important;
+}
+.btn1Active{
+    transform : translateX(0px)!important;
+}
+.btn2Active{
+    transform : translateX(-33%)!important;
+}
+.btn3Active{
+    transform : translateX(-66.5%)!important;
+}
+.client-pic{
+    width: 140px;
+    height: 140px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: 0;
+    border-radius: 100%;
+    /* background-image: url(https://uploads-ssl.webflow.com/61151a6979644d46e49e429b/61336f4610ceeb5d479a4599_Untitled-1.jpg); */
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testi-client-name{
+    margin-bottom: 5px;
+    font-family: 'Kantumruy Pro',sans-serif;
+    color: #f7f7f7;
+    font-size: 26px;
+    font-weight: 1000;
+    text-align: left;
+}
+.testi-company-name{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: proxima-nova,sans-serif;
+    text-align: left;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.client-testi-desc{
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.client-testimonial-content{
+    text-align: left;
+    width: 100%;
+}
+
+@media (max-width: 1400px) { 
+    .client-pic{
+        width: 100px;
+        height: 100px;
+    }
+
+    .client-testi-desc{
+        text-align: left;
+        font-size: 17px;
+        margin-bottom: 3rem;
+    }
+    .indicators{
+        left: 28px;
+        top: 7rem;
+    }
+    .heading-test{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 992px) { 
+    .client-pic{
+        width: 140px;
+        height: 140px;
+    }
+    .indicators{
+        left: 45px;
+        top: 10rem;
+    }
+    .testi-company-name, .testi-client-name{
+        text-align: center;
+    }
+    .client-testi-desc{
+        font-size: 26px;
+        text-align: center;
+    }
+    .client-testimonial-content{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) { 
+    #slides{
+        display: block;
+    }
+    .client-pic{
+        margin-left: auto;
+    }
+    .indicators{
+        left: 45%;
+        top: 14rem;
+
+    }
+}
+
+@media (max-width: 567px) { 
+    .indicators{
+        left: 43%;
+    }
+}
+@media (max-width: 420px) { 
+    .indicators{
+        top: 16rem;
+    }
+}

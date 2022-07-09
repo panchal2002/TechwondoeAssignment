@@ -1,0 +1,132 @@
+.clients{
+    min-height: auto;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.heading-client .h1{
+    text-align: center;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 3.5rem;
+    margin-top: 0;
+    font-family: 'Kantumruy Pro',sans-serif;
+}
+
+
+.clients-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-rows: 110px;
+    padding: 0 4px;
+    column-gap: 30px;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+
+.images {
+    /* margin-top: 15px; */
+    margin-top: 0;
+    vertical-align: middle;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-1{
+    margin-top: 15px;
+}
+.image-2{
+    max-height: 60%;
+    margin-top: 0px;
+    vertical-align: middle;
+    max-width: fit-content;
+}
+.image-3{
+    margin-top: 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-5{
+    margin-top: 0px;
+    width: 40%;
+    position: relative;
+    top: -10px;
+}
+.image-4{
+    margin-top: 10px;
+    width: 90%;
+}
+.image-8{
+    width: 60%;
+    margin-top: -10px;
+}
+.image-9, .image-11{
+    margin-top: 25px;
+}
+.image-10{
+    max-width: 50%;
+    margin-top: 10px;
+}
+.image-12{
+    margin-top: 25px;
+}
+
+@media (max-width: 1400px) { 
+    .heading-client .h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 992px) { 
+    .clients-images {
+        grid-template-rows: 70px;
+    }
+}
+
+@media (max-width: 567px) { 
+    .clients-images {
+        grid-template-rows: 50px;
+    }
+}
+
+@media (max-width: 497px) { 
+    .clients-images{
+        width: auto;
+        max-width: 80%;
+        grid-column-gap: 20px;
+        grid-template-areas: "Area";
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .images{
+        min-width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        border: 0;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .image-2{
+        max-height: 100%;
+        margin-top: 10px;
+    }
+    .image-5{
+        width: 70%;
+    }
+
+}

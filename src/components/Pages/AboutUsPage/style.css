@@ -1,0 +1,8 @@
+.about-us-page-container{
+    margin-top: 10%;
+    font-size: 5rem;
+    background: linear-gradient(45deg, #F9D423, #FF4E50);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

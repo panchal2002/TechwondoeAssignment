@@ -1,0 +1,151 @@
+.our-services {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.servicesContainer{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    order: -1;
+    flex: 1 1;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 100%;
+  height: fit-content;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.inner{
+    align-self: center;
+}
+.services {
+    font-family: proxima-nova,sans-serif;
+    color: #f7f7f7;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.display-2{
+    text-align: left;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 3.5rem;
+    margin-top: 0;
+    font-family: 'Kantumruy Pro',sans-serif;
+}
+
+.services-list{
+    margin-top: 50px;
+    text-align: left;
+}
+.list{
+    padding-left: 0;
+    list-style: none;
+}
+.list li:before {
+    content: "↗";
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    font-family: "NeueMachina";
+    font-size: 26px;
+    padding-right: 20px;
+    background: linear-gradient(45deg, #F9D423, #FF4E50);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.list li{
+    text-align: left;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.button-line {
+    background: transparent;
+    color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 30px 14px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    font-family: proxima-nova,sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.text-gradient{
+    background: linear-gradient(45deg, #F9D423, #FF4E50);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline;
+    font-size: 7px;
+}
+
+@media (max-width: 1400px) { 
+    .display-2{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 767px) { 
+    .display-2{
+        font-size: 3rem;
+    }
+    .text-align-cenre-mobile{
+        line-height: 1;
+    }
+}
+
+@media (max-width: 479px) { 
+    .servicesContainer img{
+        display: none;
+    }
+    .servicesContainer{
+        display: block;
+    }    
+    .services, .display-2, .list .l1, .services-list{
+        text-align: center;
+    }
+    .list li:before{
+        position: relative;
+    }
+    .display-2 {
+        font-size: 2.5rem;
+    }
+}
